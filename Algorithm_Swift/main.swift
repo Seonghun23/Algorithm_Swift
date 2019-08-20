@@ -8,5 +8,5 @@
 
 import Foundation
 
-print("Hello, World!")
-
+print(bubbleSort([8, 7, 4, 1, 6, 2, 3, 5]))
+print(selectionSort([8, 7, 4, 1, 6, 2, 3, 5]))

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1477D5F1230B78120085811D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1477D5F0230B78120085811D /* main.swift */; };
+		1477D5F9230B78370085811D /* Buble Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1477D5F8230B78370085811D /* Buble Sort.swift */; };
+		1477D5FB230B79510085811D /* Selection Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1477D5FA230B79510085811D /* Selection Sort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		1477D5ED230B78120085811D /* Algorithm_Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm_Swift; sourceTree = BUILT_PRODUCTS_DIR; };
 		1477D5F0230B78120085811D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1477D5F8230B78370085811D /* Buble Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Buble Sort.swift"; sourceTree = "<group>"; };
+		1477D5FA230B79510085811D /* Selection Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Selection Sort.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,18 @@
 			isa = PBXGroup;
 			children = (
 				1477D5F0230B78120085811D /* main.swift */,
+				1477D5F7230B78190085811D /* Sort */,
 			);
 			path = Algorithm_Swift;
+			sourceTree = "<group>";
+		};
+		1477D5F7230B78190085811D /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				1477D5F8230B78370085811D /* Buble Sort.swift */,
+				1477D5FA230B79510085811D /* Selection Sort.swift */,
+			);
+			path = Sort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1477D5F1230B78120085811D /* main.swift in Sources */,
+				1477D5FB230B79510085811D /* Selection Sort.swift in Sources */,
+				1477D5F9230B78370085811D /* Buble Sort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
