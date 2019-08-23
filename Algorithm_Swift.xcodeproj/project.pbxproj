@@ -12,6 +12,7 @@
 		1477D5FB230B79510085811D /* Selection Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1477D5FA230B79510085811D /* Selection Sort.swift */; };
 		1477D5FE230B7ABA0085811D /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1477D5FD230B7ABA0085811D /* Sort.swift */; };
 		1477D600230B7C020085811D /* Quick Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1477D5FF230B7C020085811D /* Quick Sort.swift */; };
+		14B16862230FDB7C004301E7 /* Greedy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B16861230FDB7C004301E7 /* Greedy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		1477D5FA230B79510085811D /* Selection Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Selection Sort.swift"; sourceTree = "<group>"; };
 		1477D5FD230B7ABA0085811D /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 		1477D5FF230B7C020085811D /* Quick Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quick Sort.swift"; sourceTree = "<group>"; };
+		14B16861230FDB7C004301E7 /* Greedy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greedy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				1477D5F0230B78120085811D /* main.swift */,
+				14B16860230FDB50004301E7 /* Greedy */,
 				1477D5F7230B78190085811D /* Sort */,
 			);
 			path = Algorithm_Swift;
@@ -80,6 +83,14 @@
 				1477D5FF230B7C020085811D /* Quick Sort.swift */,
 			);
 			path = Sort;
+			sourceTree = "<group>";
+		};
+		14B16860230FDB50004301E7 /* Greedy */ = {
+			isa = PBXGroup;
+			children = (
+				14B16861230FDB7C004301E7 /* Greedy.swift */,
+			);
+			path = Greedy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1477D5F1230B78120085811D /* main.swift in Sources */,
+				14B16862230FDB7C004301E7 /* Greedy.swift in Sources */,
 				1477D600230B7C020085811D /* Quick Sort.swift in Sources */,
 				1477D5FE230B7ABA0085811D /* Sort.swift in Sources */,
 				1477D5FB230B79510085811D /* Selection Sort.swift in Sources */,
