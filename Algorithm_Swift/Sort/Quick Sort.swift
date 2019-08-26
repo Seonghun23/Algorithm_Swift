@@ -71,35 +71,35 @@ func partitionHoare<T: Comparable>(_ array: inout [T], low: Int, high: Int) -> I
     }
 }
 
-// Quick Sort Hoare
-//func quickSortDutchFlag<T: Comparable>(_ array: inout [T], low: Int, high: Int) {
-//    if low < high {
-//        let pivotIndex = random(min: low, max: high)
-//
-//        let (p, q) = partitionDutchFlag(&array, low: low, high: high, pivotIndex: pivotIndex)
-//        quickSortDutchFlag(&array, low: low, high: p - 1)
-//        quickSortDutchFlag(&array, low: q + 1, high: high)
-//    }
-//}
+// Quick Sort DutchFlag
+func quickSortDutchFlag<T: Comparable>(_ array: inout [T], low: Int, high: Int) {
+    if low < high {
+        let pivotIndex = Int.random(in: low...high)
 
-//func partitionDutchFlag<T: Comparable>(_ array: inout [T], low: Int, high: Int, pivotIndex: Int) -> (Int, Int) {
-//    let pivot = array[pivotIndex]
-//
-//    var smaller = low
-//    var equal = low
-//    var larger = high
-//
-//    while equal <= larger {
-//        if array[equal] < pivot {
-//            swap(&array, smaller, equal)
-//            smaller += 1
-//            equal += 1
-//        } else if array[equal] == pivot {
-//            equal += 1
-//        } else {
-//            swap(&array, equal, larger)
-//            larger -= 1
-//        }
-//    }
-//    return (smaller, larger)
-//}
+        let (p, q) = partitionDutchFlag(&array, low: low, high: high, pivotIndex: pivotIndex)
+        quickSortDutchFlag(&array, low: low, high: p - 1)
+        quickSortDutchFlag(&array, low: q + 1, high: high)
+    }
+}
+
+func partitionDutchFlag<T: Comparable>(_ array: inout [T], low: Int, high: Int, pivotIndex: Int) -> (Int, Int) {
+    let pivot = array[pivotIndex]
+
+    var smaller = low
+    var equal = low
+    var larger = high
+
+    while equal <= larger {
+        if array[equal] < pivot {
+            array.swapAt(smaller, equal)
+            smaller += 1
+            equal += 1
+        } else if array[equal] == pivot {
+            equal += 1
+        } else {
+            array.swapAt(equal, larger)
+            larger -= 1
+        }
+    }
+    return (smaller, larger)
+}

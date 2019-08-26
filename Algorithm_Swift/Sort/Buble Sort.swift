@@ -38,9 +38,11 @@ func bubbleSort<T: Comparable>(_ array: [T]) -> [T] {
     // 만일 1사이클이 다 돌았는데 스왑을 한번도 하지 않았다는 것은 이미 정렬이 되었다는 뜻이다. 그때는 반복을 멈춰도 된다.
     
     //시간을 더 줄이는 방법
-    var flag: Bool = false
+    var flag = false
+    
     for i in result.indices {
         flag = false
+        
         for j in 0..<result.count-(i+1) {
             if result[j] > result[j+1] {
                 result.swapAt(j, j+1)

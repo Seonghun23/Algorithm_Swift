@@ -68,7 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				1477D5F0230B78120085811D /* main.swift */,
-				14B16860230FDB50004301E7 /* Greedy */,
+				14B16860230FDB50004301E7 /* Traveling Salesman Problem */,
 				1477D5F7230B78190085811D /* Sort */,
 			);
 			path = Algorithm_Swift;
@@ -85,12 +85,12 @@
 			path = Sort;
 			sourceTree = "<group>";
 		};
-		14B16860230FDB50004301E7 /* Greedy */ = {
+		14B16860230FDB50004301E7 /* Traveling Salesman Problem */ = {
 			isa = PBXGroup;
 			children = (
 				14B16861230FDB7C004301E7 /* Greedy.swift */,
 			);
-			path = Greedy;
+			path = "Traveling Salesman Problem";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
