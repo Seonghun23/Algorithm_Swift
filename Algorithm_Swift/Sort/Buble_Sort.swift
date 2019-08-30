@@ -9,6 +9,8 @@
 import Foundation
 
 func bubbleSort<T: Comparable>(_ array: [T]) -> [T] {
+    guard array.count > 1 else { return array }
+    
     var result = array
     
     //기본적인 버블정렬

@@ -9,6 +9,8 @@
 import Foundation
 
 func selectionSort<T: Comparable>(_ array: [T]) -> [T] {
+    guard array.count > 1 else { return array }
+    
     var result = array
     
     for i in result.indices {

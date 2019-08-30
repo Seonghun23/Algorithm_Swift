@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+func createRandomArray(numberOfElements: Int = 10) -> [Int] {
+    var randomIntInArray = [Int]()
+    
+    while randomIntInArray.count != numberOfElements {
+        let popRandomValue = Int(arc4random_uniform(11))
+        randomIntInArray.append(popRandomValue)
+    }
+    
+    return randomIntInArray
+}
